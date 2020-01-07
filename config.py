@@ -2,15 +2,15 @@
 BOT_PROXY_URL = 'http://146.185.192.26:3128'
 
 # Api key for developers giphy api
-GIPHY_API_KEY = 'Sa7e45O6L3NVOKkP1xhbvrJNBI5aodVS'
+GIPHY_API_KEY = 'tM7IdU36TzQHajDyWx4FyTgJ9DfkArIR'
 
 # It's wrong token :)
-BOT_API_TOKEN = '917789027:AAFIjGpp9efbm4weU0_gS3zZuK8qCxwolpc'
+BOT_API_TOKEN = '757367620:AAG-hjldVvwiQhcED7FdrH-U4eE2tMsL7ng'
 
 # Text blocks
-WELCOME_TETX = "Привет!\nВы попали в КОТОБОТ!\nВведите любое сообщение для получения gif с котами или воспользуйтесь кнопками в меню."
-RENDER_TEXT = "Введите текст, который будет наложен на gif картинку.\nМожете отправить сообщение друзьям)"
-RENDER_TEXT_WAIT = 'Пожалуйста подождите, котики рисуют вам картинку'
-ABOUT_TEXT = 'Бот с котиками на все случаи жизни.\nНедавно добавили функцию надписей на гифках. Работает через сервис cataas.com.'
+WELCOME_TETX = "Hi there!\nI'm catlover bot\nВведите любое сообщение для получения gif с котами или воспользуйтесь кнопками в меню."
+RENDER_TEXT = "Input your text to place it over random cat pic for your gif"
+RENDER_TEXT_WAIT = 'Wait while the cats are preparing your a gif for you'
+ABOUT_TEXT = 'Get a cat gif using cataas.com.'
 
 RENDER_TEXT_URL = 'https://cataas.com/cat/gif/says/{text}?filter=sepia&color=orange&size=40&type=or'
