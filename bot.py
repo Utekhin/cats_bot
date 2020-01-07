@@ -27,27 +27,27 @@ async def send_welcome(message: types.Message):
     await bot.send_message(chat_id=message.chat.id, text=config.WELCOME_TEXT, reply_markup=default_keyboard)
 
 
-#async def send_cats(message, count):
-#     if storage.data_get(message.from_user.id, 'use_file_cash') == '01' and storage.data_get(message.from_user.id, 'use_file_cash_time') + 60 < time.time():
-#        for url in GifSource.get_random_lines_from_file(count):
-#            await message.answer_document(document=url, reply_markup=default_keyboard)
+async def send_cats(message, count):
+     if storage.data_get(message.from_user.id, 'use_file_cash') == '01' and storage.data_get(message.from_user.id, 'use_file_cash_time') + 60 < time.time():
+        for url in GifSource.get_random_lines_from_file(count):
+            await message.answer_document(document=url, reply_markup=default_keyboard)
 
-#     else
+     else
 
-# 2 cats handler
-#@dp.message_handler(lambda message: message.text == 'Two cats')
-#async def multi_cats(message: types.Message):
-#    for i in range(2):
-#        url = await GifSource.get_random_cat_url()
-#        await message.answer_document(document=url, reply_markup=default_keyboard)
+ 2 cats handler
+@dp.message_handler(lambda message: message.text == 'Two cats')
+async def multi_cats(message: types.Message):
+    for i in range(2):
+        url = await GifSource.get_random_cat_url()
+        await message.answer_document(document=url, reply_markup=default_keyboard)
 
 
-# 3 cats handler
-#@dp.message_handler(lambda message: message.text == 'Three cats')
-#async def multi_cats_big(message: types.Message):
-#    for i in range(3):
-#        url = await GifSource.get_random_cat_url()
-#        await message.answer_document(document=url, reply_markup=default_keyboard)
+ 3 cats handler
+@dp.message_handler(lambda message: message.text == 'Three cats')
+async def multi_cats_big(message: types.Message):
+    for i in range(3):
+        url = await GifSource.get_random_cat_url()
+        await message.answer_document(document=url, reply_markup=default_keyboard)
 
 
 # Gif text handler
