@@ -10,7 +10,8 @@ from aiogram import Bot, Dispatcher, executor, types
 logging.basicConfig(level=logging.INFO)
 
 # Initialize bot and dispatcher
-bot = Bot(token=config.BOT_API_TOKEN, proxy=config.BOT_PROXY_URL)
+#bot = Bot(token=config.BOT_API_TOKEN, proxy=config.BOT_PROXY_URL)
+bot = Bot(token=config.BOT_API_TOKEN)
 dp = Dispatcher(bot)
 
 # User data storage
@@ -23,7 +24,7 @@ text_render_keyboard = BotReplyKeyboards.text_render_reply()
 # Start and help text message
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
-    await bot.send_message(chat_id=message.chat.id, text=config.WELCOME_TETX, reply_markup=default_keyboard)
+    await bot.send_message(chat_id=message.chat.id, text=config.WELCOME_TEXT, reply_markup=default_keyboard)
 
 
 async def send_cats(message, count):
