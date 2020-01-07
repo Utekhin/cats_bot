@@ -6,8 +6,8 @@ class BotReplyKeyboards:
     @staticmethod
     def default_reply():
         menu_markup = types.reply_keyboard.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
-        menu_markup.row(types.reply_keyboard.KeyboardButton('5 котиков'), types.reply_keyboard.KeyboardButton('10 котиков'))
-        menu_markup.row(types.reply_keyboard.KeyboardButton('Надпись'), types.reply_keyboard.KeyboardButton('О боте'))
+        menu_markup.row(types.reply_keyboard.KeyboardButton('Two cats'), types.reply_keyboard.KeyboardButton('Three cats'))
+        menu_markup.row(types.reply_keyboard.KeyboardButton('Text'), types.reply_keyboard.KeyboardButton('About'))
 
         return menu_markup
 
@@ -15,7 +15,7 @@ class BotReplyKeyboards:
     @staticmethod
     def text_render_reply():
         menu_markup = types.reply_keyboard.ReplyKeyboardMarkup(one_time_keyboard=True, resize_keyboard=True)
-        menu_markup.add(types.reply_keyboard.KeyboardButton('Отмена'))
+        menu_markup.add(types.reply_keyboard.KeyboardButton('Cancel'))
 
         return menu_markup
 
