@@ -34,7 +34,7 @@ async def send_cats(message, count):
      else
 
 # 5 cats handler
-@dp.message_handler(lambda message: message.text == '5 котиков')
+@dp.message_handler(lambda message: message.text == 'Five cats')
 async def multi_cats(message: types.Message):
     for i in range(5):
         url = await GifSource.get_random_cat_url()
@@ -42,7 +42,7 @@ async def multi_cats(message: types.Message):
 
 
 # 10 cats handler
-@dp.message_handler(lambda message: message.text == '10 котиков')
+@dp.message_handler(lambda message: message.text == 'Ten cats')
 async def multi_cats_big(message: types.Message):
     for i in range(10):
         url = await GifSource.get_random_cat_url()
@@ -50,7 +50,7 @@ async def multi_cats_big(message: types.Message):
 
 
 # Gif text handler
-@dp.message_handler(lambda message: message.text == 'Надпись')
+@dp.message_handler(lambda message: message.text == 'Your text')
 async def text_render(message: types.Message):
 
     # Set step data
