@@ -1,8 +1,8 @@
 # Api key for developers giphy api
-GIPHY_API_KEY = 'tM7IdU36TzQHajDyWx4FyTgJ9DfkArIR'
+GIPHY_API_KEY = 'tM7Id7575757ajDyWx4FyTgJ9DfkArIR'
 
 # 
-BOT_API_TOKEN = '1044936068:AAGFz8aOzWIzHRCweJfQt0QvwHPdVI8sVS0'
+BOT_API_TOKEN = '104565657:AAGFz8aO5757zHRCweJfQt0QvwHPdVI8sVS0'
 
 # Text blocks
 WELCOME_TEXT = "Hi there!\nI'm catlover bot\nUse buttons or type anything to get your cats"
